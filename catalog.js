@@ -101,11 +101,11 @@ window.SONGBOOK = [
           }
         ],
         "chords": {
-          "C": [
+          "A": [
+            2,
+            1,
             0,
-            0,
-            0,
-            3
+            0
           ],
           "Am": [
             2,
@@ -113,16 +113,22 @@ window.SONGBOOK = [
             0,
             0
           ],
-          "F": [
-            2,
+          "C": [
             0,
+            0,
+            0,
+            3
+          ],
+          "Dm": [
+            2,
+            2,
             1,
             0
           ],
-          "G7": [
-            0,
-            2,
+          "E7": [
             1,
+            2,
+            0,
             2
           ],
           "Em7": [
@@ -131,15 +137,9 @@ window.SONGBOOK = [
             0,
             2
           ],
-          "A": [
+          "F": [
             2,
-            1,
             0,
-            0
-          ],
-          "Dm": [
-            2,
-            2,
             1,
             0
           ],
@@ -149,10 +149,10 @@ window.SONGBOOK = [
             3,
             2
           ],
-          "E7": [
-            1,
-            2,
+          "G7": [
             0,
+            2,
+            1,
             2
           ]
         },
@@ -262,7 +262,9 @@ window.SONGBOOK = [
             "width": 43,
             "height": 2.3611
           }
-        ]
+        ],
+        "pageSet": "work-0001-ukulele",
+        "pageScript": "assets/work-0001-ukulele-complete.js"
       },
       {
         "instrument": "吉他",
@@ -361,12 +363,12 @@ window.SONGBOOK = [
           }
         ],
         "chords": {
-          "C": [
+          "A": [
             -1,
-            3,
-            2,
             0,
-            1,
+            2,
+            2,
+            2,
             0
           ],
           "Am": [
@@ -377,36 +379,12 @@ window.SONGBOOK = [
             1,
             0
           ],
-          "F": [
-            1,
-            3,
-            3,
-            2,
-            1,
-            1
-          ],
-          "G7": [
-            3,
-            2,
-            0,
-            0,
-            0,
-            1
-          ],
-          "Em7": [
-            0,
-            2,
-            0,
-            0,
-            0,
-            0
-          ],
-          "A": [
+          "C": [
             -1,
+            3,
+            2,
             0,
-            2,
-            2,
-            2,
+            1,
             0
           ],
           "Dm": [
@@ -417,6 +395,30 @@ window.SONGBOOK = [
             3,
             1
           ],
+          "E7": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
+          "Em7": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "F": [
+            1,
+            3,
+            3,
+            2,
+            1,
+            1
+          ],
           "G": [
             3,
             2,
@@ -425,13 +427,13 @@ window.SONGBOOK = [
             0,
             3
           ],
-          "E7": [
-            0,
+          "G7": [
+            3,
             2,
             0,
-            1,
             0,
-            0
+            0,
+            1
           ]
         },
         "pages": 6,
@@ -540,7 +542,9 @@ window.SONGBOOK = [
             "width": 43,
             "height": 2.3611
           }
-        ]
+        ],
+        "pageSet": "work-0001-guitar",
+        "pageScript": "assets/work-0001-guitar-complete.js"
       }
     ]
   },
@@ -651,22 +655,6 @@ window.SONGBOOK = [
           }
         ],
         "chords": {
-          "C": [
-            -1,
-            3,
-            2,
-            0,
-            1,
-            0
-          ],
-          "G": [
-            3,
-            2,
-            0,
-            0,
-            0,
-            3
-          ],
           "Am": [
             -1,
             0,
@@ -675,20 +663,20 @@ window.SONGBOOK = [
             1,
             0
           ],
-          "F": [
-            1,
-            3,
+          "C": [
+            -1,
             3,
             2,
+            0,
             1,
-            1
+            0
           ],
-          "Em": [
-            0,
+          "C7": [
+            -1,
+            3,
             2,
-            2,
-            0,
-            0,
+            3,
+            1,
             0
           ],
           "Dm": [
@@ -699,13 +687,29 @@ window.SONGBOOK = [
             3,
             1
           ],
-          "C7": [
-            -1,
+          "Em": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "F": [
+            1,
+            3,
             3,
             2,
-            3,
             1,
-            0
+            1
+          ],
+          "G": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
           ]
         },
         "pages": 6,
@@ -838,7 +842,9 @@ window.SONGBOOK = [
             "width": 43,
             "height": 2.3611
           }
-        ]
+        ],
+        "pageSet": "work-0002-guitar",
+        "pageScript": "assets/work-0002-guitar-complete.js"
       },
       {
         "instrument": "尤克里里",
@@ -942,27 +948,27 @@ window.SONGBOOK = [
           }
         ],
         "chords": {
-          "C": [
-            0,
-            0,
-            0,
-            3
-          ],
-          "G": [
-            0,
-            2,
-            3,
-            2
-          ],
           "Am": [
             2,
             0,
             0,
             0
           ],
-          "F": [
-            2,
+          "C": [
             0,
+            0,
+            0,
+            3
+          ],
+          "C7": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "Dm": [
+            2,
+            2,
             1,
             0
           ],
@@ -972,17 +978,17 @@ window.SONGBOOK = [
             3,
             2
           ],
-          "Dm": [
+          "F": [
             2,
-            2,
+            0,
             1,
             0
           ],
-          "C7": [
+          "G": [
             0,
-            0,
-            0,
-            1
+            2,
+            3,
+            2
           ]
         },
         "pages": 6,
@@ -1115,7 +1121,9 @@ window.SONGBOOK = [
             "width": 43,
             "height": 2.3611
           }
-        ]
+        ],
+        "pageSet": "work-0002-ukulele",
+        "pageScript": "assets/work-0002-ukulele-complete.js"
       }
     ]
   },
@@ -1197,9 +1205,9 @@ window.SONGBOOK = [
           }
         ],
         "chords": {
-          "C": [
+          "Am7": [
             -1,
-            3,
+            0,
             2,
             0,
             1,
@@ -1213,17 +1221,9 @@ window.SONGBOOK = [
             3,
             2
           ],
-          "Em": [
-            0,
-            2,
-            2,
-            0,
-            0,
-            0
-          ],
-          "Am7": [
+          "C": [
             -1,
-            0,
+            3,
             2,
             0,
             1,
@@ -1236,6 +1236,14 @@ window.SONGBOOK = [
             2,
             1,
             2
+          ],
+          "Em": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
           ],
           "G": [
             3,
@@ -1304,7 +1312,9 @@ window.SONGBOOK = [
             "width": 43,
             "height": 2.3611
           }
-        ]
+        ],
+        "pageSet": "work-0003-guitar",
+        "pageScript": "assets/work-0003-guitar-complete.js"
       },
       {
         "instrument": "尤克里里",
@@ -1379,11 +1389,11 @@ window.SONGBOOK = [
           }
         ],
         "chords": {
-          "C": [
+          "Am7": [
             0,
             0,
             0,
-            3
+            0
           ],
           "Bm": [
             4,
@@ -1391,23 +1401,23 @@ window.SONGBOOK = [
             2,
             2
           ],
-          "Em": [
-            0,
-            4,
-            3,
-            2
-          ],
-          "Am7": [
+          "C": [
             0,
             0,
             0,
-            0
+            3
           ],
           "D7": [
             2,
             2,
             2,
             3
+          ],
+          "Em": [
+            0,
+            4,
+            3,
+            2
           ],
           "G": [
             0,
@@ -1474,7 +1484,9 @@ window.SONGBOOK = [
             "width": 43,
             "height": 2.3611
           }
-        ]
+        ],
+        "pageSet": "work-0003-ukulele",
+        "pageScript": "assets/work-0003-ukulele-complete.js"
       }
     ]
   }
