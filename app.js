@@ -31,18 +31,19 @@ async function renderScore(id){
  let pack;try{pack=await loadPages(v)}catch{if(sequence===scoreSequence){main.innerHTML='<a class="back" href="#/scores">← 曲谱列表</a><div class="empty-state"><h2>曲谱暂时未能加载</h2><button class="quiet-button" id="retry-score" type="button">重新加载</button></div>';main.querySelector('#retry-score').onclick=()=>renderScore(id)}return}
  if(sequence!==scoreSequence)return;
  const pageIndex=Math.min(pagePositions.get(v.pageSet)||0,pack.pages.length-1),page=pack.pages[pageIndex];
- const current={...v,image:page.image,hotspots:page.hotspots};
- main.innerHTML=`<a class="back" href="#/scores">← 曲谱列表</a><div class="detail-header"><div><h1 class="song-title">${esc(song.title)}</h1><p class="muted song-meta">${esc(song.artist)} · <span class="inline-stars" aria-label="暂定${v.stars}星">${stars(v.stars)}</span></p></div></div><div class="score-tools"></div><div class="rhythms">${v.rhythms.filter(Boolean).map((r,i)=>`<button class="rhythm" type="button" data-rhythm="${i}"><span>${esc(r)}</span><small>节奏教学 ↗</small></button>`).join('')}</div><p class="preview-label">完整曲谱 · ${esc(v.key)} 调 · 变调夹：${esc(v.capo)} · 共 ${pack.pages.length} 页</p><div class="page-nav" data-pagination="top"></div><section class="score score-original" aria-label="${esc(song.title)}第${pageIndex+1}页可点击和弦曲谱">${scoreMarkup(current)}</section><div class="page-nav" data-pagination="bottom"></div><a class="related" href="#/song-lesson/${song.id}"><span>这首歌的完整教学</span><span class="status">待更新 ›</span></a>`;
+ const perView=window.innerWidth>=900?3:1,start=Math.floor(pageIndex/perView)*perView;
+ const shown=pack.pages.slice(start,start+perView);
+ main.innerHTML=`<a class="back" href="#/scores">← 曲谱列表</a><div class="detail-header"><div><h1 class="song-title">${esc(song.title)}</h1><p class="muted song-meta">${esc(song.artist)} · <span class="inline-stars" aria-label="暂定${v.stars}星">${stars(v.stars)}</span></p></div></div><div class="score-tools"></div><div class="rhythms">${v.rhythms.filter(Boolean).map((r,i)=>`<button class="rhythm" type="button" data-rhythm="${i}"><span>${esc(r)}</span><small>节奏教学 ↗</small></button>`).join('')}</div><p class="preview-label">完整曲谱 · ${esc(v.key)} 调 · 变调夹：${esc(v.capo)} · 共 ${pack.pages.length} 页</p><div class="page-nav" data-pagination="top"></div><section class="score score-original" aria-label="${esc(song.title)}第${pageIndex+1}页可点击和弦曲谱">${shown.map(p=>scoreMarkup({...v,image:p.image,hotspots:p.hotspots})).join('')}</section><div class="page-nav" data-pagination="bottom"></div><a class="related" href="#/song-lesson/${song.id}"><span>这首歌的完整教学</span><span class="status">待更新 ›</span></a>`;
  const tools=main.querySelector('.score-tools');tools.append(instrumentPicker(()=>renderScore(id)));
- const original=document.createElement('button');original.className='quiet-button';original.type='button';original.textContent='放大当前谱页';original.onclick=()=>{lastImageTrigger=original;document.getElementById('image-title').textContent='原谱 · 第 '+(pageIndex+1)+' / '+pack.pages.length+' 页';document.getElementById('original-image').src=page.image;document.getElementById('original-image').alt=song.title+' '+v.instrument+'第'+(pageIndex+1)+'页';imageDialog.showModal();imageDialog.scrollTop=0};tools.append(original);
  for(const bar of main.querySelectorAll('[data-pagination]')){
-  const prev=document.createElement('button');prev.type='button';prev.className='quiet-button';prev.textContent='← 上一页';prev.disabled=pageIndex===0;
-  const next=document.createElement('button');next.type='button';next.className='quiet-button';next.textContent='下一页 →';next.disabled=pageIndex===pack.pages.length-1;
+  const prev=document.createElement('button');prev.type='button';prev.className='quiet-button';prev.textContent='‹';prev.setAttribute('aria-label','上一组曲谱');prev.disabled=start===0;
+  const next=document.createElement('button');next.type='button';next.className='quiet-button';next.textContent='›';next.setAttribute('aria-label','下一组曲谱');next.disabled=start+perView>=pack.pages.length;
   const change=async i=>{pagePositions.set(v.pageSet,i);await renderScore(id);window.scrollTo({top:0,behavior:'instant'})};
-  prev.onclick=()=>change(pageIndex-1);next.onclick=()=>change(pageIndex+1);
-  const menu=dropdown('选择谱页',pack.pages.map((_,i)=>({value:String(i),label:'第 '+(i+1)+' / '+pack.pages.length+' 页'})),String(pageIndex),i=>change(Number(i)));
+  prev.onclick=()=>change(Math.max(0,start-perView));next.onclick=()=>change(start+perView);
+  const menu=dropdown('选择谱页',pack.pages.flatMap((_,i)=>i%perView?[]:[{value:String(i),label:(perView===1?String(i+1):(i+1)+'–'+Math.min(i+perView,pack.pages.length))+' / '+pack.pages.length}]),String(start),i=>change(Number(i)));
   bar.append(prev,menu,next);
  }
+ tools.append(main.querySelector('[data-pagination="top"]'));
  fitScorePage();
  main.querySelectorAll('[data-chord]').forEach(b=>b.onclick=()=>openLesson(song,v,'chord',b.dataset.chord,b));
  main.querySelectorAll('[data-rhythm]').forEach(b=>b.onclick=()=>openLesson(song,v,'rhythm',v.rhythms[Number(b.dataset.rhythm)],b));
@@ -57,5 +58,6 @@ function renderSongLesson(id){const song=SONGS.find(s=>s.id===id);if(!song){notF
 function notFound(){main.innerHTML='<div class="empty-state"><h2>没有找到这个内容</h2><a class="back" href="#/scores">返回曲谱列表 →</a></div>'}
 window.addEventListener('hashchange',()=>{if(lessonDialog.open)lessonDialog.close();if(imageDialog.open)imageDialog.close();render();if(route()[0]==='scores')window.scrollTo({top:listScroll,behavior:'instant'});else window.scrollTo({top:0,behavior:'instant'})});render();
 
-function fitScorePage(){const sheet=main.querySelector('.score-original');if(!sheet)return;const available=Math.max(120,window.innerHeight-(sheet.getBoundingClientRect().top+window.scrollY)-12);sheet.style.width=Math.min(main.clientWidth,available*0.75)+'px';}
-window.addEventListener('resize',fitScorePage);
+function fitScorePage(){const sheet=main.querySelector('.score-original');if(!sheet)return;const count=sheet.children.length,available=Math.max(120,window.innerHeight-(sheet.getBoundingClientRect().top+window.scrollY)-12);sheet.style.width=Math.min(main.clientWidth,available*0.75*count+(count-1)*10)+'px';}
+let desktopScores=window.innerWidth>=900;
+window.addEventListener('resize',()=>{const now=window.innerWidth>=900;if(now!==desktopScores){desktopScores=now;if(route()[0]==='score')renderScore(route()[1])}else fitScorePage()});
