@@ -34,7 +34,7 @@ async function renderScore(id){
  const pageIndex=Math.min(pagePositions.get(v.pageSet)||0,pack.pages.length-1),page=pack.pages[pageIndex];
  const perView=parallelView&&window.innerWidth>=900?3:1,start=Math.floor(pageIndex/perView)*perView;
  const shown=pack.pages.slice(start,start+perView);
- main.innerHTML=`<a class="back" href="#/scores">← 曲谱列表</a><div class="detail-header"><div><h1 class="song-title">${esc(song.title)}</h1><p class="muted song-meta">${esc(song.artist)} · <span class="inline-stars" aria-label="暂定${v.stars}星">${stars(v.stars)}</span></p></div></div><div class="score-tools"></div><div class="rhythms">${v.rhythms.filter(Boolean).map((r,i)=>`<button class="rhythm" type="button" data-rhythm="${i}"><span>${esc(r)}</span><small>节奏教学 ↗</small></button>`).join('')}</div><p class="preview-label">完整曲谱 · ${esc(v.key)} 调 · 变调夹：${esc(v.capo)} · 共 ${pack.pages.length} 页</p><div class="page-nav" data-pagination="top"></div><section class="score score-original" aria-label="${esc(song.title)}第${pageIndex+1}页可点击和弦曲谱">${shown.map(p=>scoreMarkup({...v,image:p.image,hotspots:p.hotspots})).join('')}</section><div class="page-nav" data-pagination="bottom"></div><a class="related" href="#/song-lesson/${song.id}"><span>这首歌的完整教学</span><span class="status">待更新 ›</span></a>`;
+ main.innerHTML=`<a class="back" href="#/scores">← 曲谱列表</a><div class="detail-header"><div><h1 class="song-title">${esc(song.title)}</h1><p class="muted song-meta">${esc(song.artist)} · <span class="inline-stars" aria-label="暂定${v.stars}星">${stars(v.stars)}</span></p></div></div><div class="score-tools"></div><div class="rhythms">${v.rhythms.filter(Boolean).map((r,i)=>`<button class="rhythm" type="button" data-rhythm="${i}"><span>${esc(r)}</span><small>节奏教学 ↗</small></button>`).join('')}</div><p class="preview-label">完整曲谱 · ${esc(v.key)} 调 · 变调夹：${esc(v.capo)} · 共 ${pack.pages.length} 页</p><div class="page-nav" data-pagination="top"></div><div class="score-stage"><section class="score score-original" aria-label="${esc(song.title)}第${pageIndex+1}页可点击和弦曲谱">${shown.map(p=>scoreMarkup({...v,image:p.image,hotspots:p.hotspots})).join('')}</section></div><div class="page-nav" data-pagination="bottom"></div><a class="related" href="#/song-lesson/${song.id}"><span>这首歌的完整教学</span><span class="status">待更新 ›</span></a>`;
  const tools=main.querySelector('.score-tools');tools.append(instrumentPicker(()=>renderScore(id)));
  const viewButton=document.createElement('button');viewButton.type='button';viewButton.className='quiet-button view-toggle';viewButton.textContent=parallelView?'单张显示':'三张并排';viewButton.setAttribute('aria-pressed',String(parallelView));viewButton.onclick=()=>{parallelView=!parallelView;renderScore(id)};tools.append(viewButton);
  for(const bar of main.querySelectorAll('[data-pagination]')){
@@ -43,7 +43,7 @@ async function renderScore(id){
   const change=async i=>{pagePositions.set(v.pageSet,i);await renderScore(id);window.scrollTo({top:0,behavior:'instant'})};
   prev.onclick=()=>change(Math.max(0,start-perView));next.onclick=()=>change(start+perView);
   const menu=dropdown('选择谱页',pack.pages.flatMap((_,i)=>i%perView?[]:[{value:String(i),label:(perView===1?String(i+1):(i+1)+'–'+Math.min(i+perView,pack.pages.length))+' / '+pack.pages.length}]),String(start),i=>change(Number(i)));
-  bar.append(prev,menu,next);
+  if(bar.dataset.pagination==='top'){prev.classList.add('side-prev');next.classList.add('side-next');main.querySelector('.score-stage').append(prev,next);bar.append(menu)}else bar.append(prev,menu,next);
  }
  tools.append(main.querySelector('[data-pagination="top"]'));
  fitScorePage();
@@ -60,6 +60,6 @@ function renderSongLesson(id){const song=SONGS.find(s=>s.id===id);if(!song){notF
 function notFound(){main.innerHTML='<div class="empty-state"><h2>没有找到这个内容</h2><a class="back" href="#/scores">返回曲谱列表 →</a></div>'}
 window.addEventListener('hashchange',()=>{if(lessonDialog.open)lessonDialog.close();if(imageDialog.open)imageDialog.close();render();if(route()[0]==='scores')window.scrollTo({top:listScroll,behavior:'instant'});else window.scrollTo({top:0,behavior:'instant'})});render();
 
-function fitScorePage(){const sheet=main.querySelector('.score-original');if(!sheet)return;const count=sheet.children.length,available=Math.max(120,window.innerHeight-(sheet.getBoundingClientRect().top+window.scrollY)-12);sheet.style.width=Math.min(main.clientWidth,available*0.75*count+(count-1)*10)+'px';}
+function fitScorePage(){const sheet=main.querySelector('.score-original');if(!sheet)return;const count=sheet.children.length,available=Math.max(120,window.innerHeight-(sheet.getBoundingClientRect().top+window.scrollY)-12);sheet.style.width=Math.min(main.querySelector('.score-stage').clientWidth-88,available*0.75*count+(count-1)*10)+'px';}
 let desktopScores=window.innerWidth>=900;
 window.addEventListener('resize',()=>{const now=window.innerWidth>=900;if(now!==desktopScores){desktopScores=now;if(route()[0]==='score')renderScore(route()[1])}else fitScorePage()});
