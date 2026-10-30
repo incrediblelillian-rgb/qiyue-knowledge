@@ -156,7 +156,113 @@ window.SONGBOOK = [
             2
           ]
         },
-        "pages": 6
+        "pages": 6,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 34.6296,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 59.8148,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 34.6296,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G7",
+            "left": 59.8148,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em7",
+            "left": 36.2037,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "A",
+            "left": 55.0926,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Dm",
+            "left": 33.0556,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G7",
+            "left": 55.0926,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 34.6296,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 59.8148,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 34.6296,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G7",
+            "left": 59.8148,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "4 / 123 / 拍 / 123",
+            "left": 9,
+            "top": 16.5972,
+            "width": 43,
+            "height": 2.3611
+          }
+        ]
       },
       {
         "instrument": "吉他",
@@ -328,7 +434,113 @@ window.SONGBOOK = [
             0
           ]
         },
-        "pages": 6
+        "pages": 6,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 34.2593,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 59.4444,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 34.2593,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G7",
+            "left": 59.4444,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em7",
+            "left": 35.8333,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "A",
+            "left": 54.7222,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Dm",
+            "left": 32.6852,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G7",
+            "left": 54.7222,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 34.2593,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 59.4444,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 34.2593,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G7",
+            "left": 59.4444,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "T / 123 / 拍 / 123",
+            "left": 9,
+            "top": 16.5972,
+            "width": 43,
+            "height": 2.3611
+          }
+        ]
       }
     ]
   },
@@ -496,7 +708,137 @@ window.SONGBOOK = [
             0
           ]
         },
-        "pages": 6
+        "pages": 6,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 35.8333,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 57.8704,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 35.8333,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 57.8704,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 34.2593,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 46.8519,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 57.7778,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 64.2593,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Dm",
+            "left": 35.8333,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 57.8704,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 35.8333,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 57.8704,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 32.6852,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 61.0185,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "T / 3 / 12 / 3",
+            "left": 9,
+            "top": 15.2083,
+            "width": 43,
+            "height": 2.3611
+          },
+          {
+            "type": "rhythm",
+            "name": "下 / 下 / 下上",
+            "left": 9,
+            "top": 17.8472,
+            "width": 43,
+            "height": 2.3611
+          }
+        ]
       },
       {
         "instrument": "尤克里里",
@@ -643,7 +985,137 @@ window.SONGBOOK = [
             1
           ]
         },
-        "pages": 6
+        "pages": 6,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 36.2037,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 58.2407,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 36.2037,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 58.2407,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 34.6296,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 47.2222,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 58.1481,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 64.6296,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Dm",
+            "left": 36.2037,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 58.2407,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 36.2037,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 58.2407,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 33.0556,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 61.3889,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "124 / 2 / 12 / 3",
+            "left": 9,
+            "top": 15.2083,
+            "width": 43,
+            "height": 2.3611
+          },
+          {
+            "type": "rhythm",
+            "name": "下 / 下 / 下上",
+            "left": 9,
+            "top": 17.8472,
+            "width": 43,
+            "height": 2.3611
+          }
+        ]
       }
     ]
   },
@@ -774,7 +1246,65 @@ window.SONGBOOK = [
             3
           ]
         },
-        "pages": 12
+        "pages": 12,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 32.963,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 35.1389,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Bm",
+            "left": 31.1111,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 33.9815,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am7",
+            "left": 36.0185,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "D7",
+            "left": 37.2685,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "下 / 下 / 下上",
+            "left": 9,
+            "top": 16.5972,
+            "width": 43,
+            "height": 2.3611
+          }
+        ]
       },
       {
         "instrument": "尤克里里",
@@ -886,7 +1416,65 @@ window.SONGBOOK = [
             2
           ]
         },
-        "pages": 12
+        "pages": 12,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 33.3333,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 35.5093,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Bm",
+            "left": 31.4815,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 34.3519,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am7",
+            "left": 36.3889,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "D7",
+            "left": 37.6389,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "下 / 下 / 下上",
+            "left": 9,
+            "top": 16.5972,
+            "width": 43,
+            "height": 2.3611
+          }
+        ]
       }
     ]
   }
