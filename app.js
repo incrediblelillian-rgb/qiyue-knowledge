@@ -7,6 +7,7 @@ const state={instrument:'尤克里里',difficulty:'all',search:'',tutorialKind:'
 const SERIES=[{id:'chords',title:'和弦按法',mark:'C'},{id:'rhythms',title:'节奏型',mark:'↓↑'},{id:'changes',title:'和弦转换',mark:'↔'},{id:'progressions',title:'常见和弦进行',mark:'Ⅰ'}];
 let dropdownId=0,lastLessonTrigger=null,lastImageTrigger=null,listScroll=0,scoreSequence=0;
 const pageLoads=new Map(),pagePositions=new Map();
+let parallelView=false;
 function loadPages(v){if(window.PAGE_SETS?.[v.pageSet])return Promise.resolve(window.PAGE_SETS[v.pageSet]);if(pageLoads.has(v.pageSet))return pageLoads.get(v.pageSet);const request=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=v.pageScript;script.onload=()=>window.PAGE_SETS?.[v.pageSet]?resolve(window.PAGE_SETS[v.pageSet]):reject(new Error('missing pages'));script.onerror=()=>{pageLoads.delete(v.pageSet);script.remove();reject(new Error('pages unavailable'))};document.head.append(script)});pageLoads.set(v.pageSet,request);return request;}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function stars(n){return '★'.repeat(n)+'☆'.repeat(5-n);}
@@ -31,10 +32,11 @@ async function renderScore(id){
  let pack;try{pack=await loadPages(v)}catch{if(sequence===scoreSequence){main.innerHTML='<a class="back" href="#/scores">← 曲谱列表</a><div class="empty-state"><h2>曲谱暂时未能加载</h2><button class="quiet-button" id="retry-score" type="button">重新加载</button></div>';main.querySelector('#retry-score').onclick=()=>renderScore(id)}return}
  if(sequence!==scoreSequence)return;
  const pageIndex=Math.min(pagePositions.get(v.pageSet)||0,pack.pages.length-1),page=pack.pages[pageIndex];
- const perView=window.innerWidth>=900?3:1,start=Math.floor(pageIndex/perView)*perView;
+ const perView=parallelView&&window.innerWidth>=900?3:1,start=Math.floor(pageIndex/perView)*perView;
  const shown=pack.pages.slice(start,start+perView);
  main.innerHTML=`<a class="back" href="#/scores">← 曲谱列表</a><div class="detail-header"><div><h1 class="song-title">${esc(song.title)}</h1><p class="muted song-meta">${esc(song.artist)} · <span class="inline-stars" aria-label="暂定${v.stars}星">${stars(v.stars)}</span></p></div></div><div class="score-tools"></div><div class="rhythms">${v.rhythms.filter(Boolean).map((r,i)=>`<button class="rhythm" type="button" data-rhythm="${i}"><span>${esc(r)}</span><small>节奏教学 ↗</small></button>`).join('')}</div><p class="preview-label">完整曲谱 · ${esc(v.key)} 调 · 变调夹：${esc(v.capo)} · 共 ${pack.pages.length} 页</p><div class="page-nav" data-pagination="top"></div><section class="score score-original" aria-label="${esc(song.title)}第${pageIndex+1}页可点击和弦曲谱">${shown.map(p=>scoreMarkup({...v,image:p.image,hotspots:p.hotspots})).join('')}</section><div class="page-nav" data-pagination="bottom"></div><a class="related" href="#/song-lesson/${song.id}"><span>这首歌的完整教学</span><span class="status">待更新 ›</span></a>`;
  const tools=main.querySelector('.score-tools');tools.append(instrumentPicker(()=>renderScore(id)));
+ const viewButton=document.createElement('button');viewButton.type='button';viewButton.className='quiet-button view-toggle';viewButton.textContent=parallelView?'单张显示':'三张并排';viewButton.setAttribute('aria-pressed',String(parallelView));viewButton.onclick=()=>{parallelView=!parallelView;renderScore(id)};tools.append(viewButton);
  for(const bar of main.querySelectorAll('[data-pagination]')){
   const prev=document.createElement('button');prev.type='button';prev.className='quiet-button';prev.textContent='‹';prev.setAttribute('aria-label','上一组曲谱');prev.disabled=start===0;
   const next=document.createElement('button');next.type='button';next.className='quiet-button';next.textContent='›';next.setAttribute('aria-label','下一组曲谱');next.disabled=start+perView>=pack.pages.length;
