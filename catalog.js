@@ -1501,67 +1501,24 @@ window.SONGBOOK = [
         "capo": "无",
         "stars": 3,
         "ratingProvisional": true,
-        "image": "assets/work-feng-zhoujielun-ukulele.svg",
-        "rhythms": [],
+        "image": "assets/work-feng-zhoujielun-ukulele-v6.svg",
+        "rhythms": [
+          "下 / 下 / 下上",
+          "124 / 3 / 12 / 3"
+        ],
         "lines": [
-          {
-            "text": "前奏：　　　　　　　　　　　　　",
-            "chords": [
-              {
-                "name": "C",
-                "at": 3
-              },
-              {
-                "name": "G",
-                "at": 6
-              },
-              {
-                "name": "F",
-                "at": 9
-              },
-              {
-                "name": "C",
-                "at": 12
-              },
-              {
-                "name": "G",
-                "at": 15
-              }
-            ],
-            "section": "前奏"
-          },
-          {
-            "text": "前奏：　　　　　　　　　　",
-            "chords": [
-              {
-                "name": "Am",
-                "at": 3
-              },
-              {
-                "name": "Em",
-                "at": 6
-              },
-              {
-                "name": "F",
-                "at": 9
-              },
-              {
-                "name": "G",
-                "at": 12
-              }
-            ],
-            "section": "前奏"
-          },
           {
             "text": "乌云在我们心里搁下一块阴影",
             "chords": [
               {
                 "name": "C",
-                "at": 0
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               },
               {
                 "name": "G",
-                "at": 9
+                "at": 7,
+                "alignment_status": "用户明确校正"
               }
             ],
             "section": "主歌"
@@ -1571,43 +1528,82 @@ window.SONGBOOK = [
             "chords": [
               {
                 "name": "F",
-                "at": 0
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               },
               {
                 "name": "C",
-                "at": 9
+                "at": 7,
+                "alignment_status": "用户明确校正"
               }
             ],
             "section": "主歌"
           },
           {
-            "text": "清晰透明　就像美丽的风景　",
+            "text": "清晰透明　就像美丽的风景",
             "chords": [
               {
                 "name": "F",
-                "at": 0
+                "at": 1,
+                "alignment_status": "用户明确校正"
               },
               {
                 "name": "Em",
-                "at": 7
+                "at": 6,
+                "alignment_status": "用户明确校正"
               },
               {
                 "name": "Am",
-                "at": 12
+                "at": 10,
+                "alignment_status": "用户明确校正"
               }
             ],
             "section": "主歌"
           },
           {
-            "text": "总在回忆里才看得清　",
+            "text": "总在回忆里才看得清",
             "chords": [
               {
                 "name": "F",
-                "at": 0
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               },
               {
                 "name": "G",
-                "at": 9
+                "at": 8,
+                "alignment_status": "用户明确校正"
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "被伤透的心能不能够继续爱我",
+            "chords": [
+              {
+                "name": "C",
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
+              },
+              {
+                "name": "G",
+                "at": 7,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "我用力牵起没温度的双手",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
+              },
+              {
+                "name": "C",
+                "at": 7,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               }
             ],
             "section": "主歌"
@@ -1680,7 +1676,7 @@ window.SONGBOOK = [
           {
             "type": "chord",
             "name": "C",
-            "left": 33.0556,
+            "left": 28.3333,
             "top": 24.3056,
             "width": 5.5556,
             "height": 7.2222
@@ -1688,7 +1684,7 @@ window.SONGBOOK = [
           {
             "type": "chord",
             "name": "G",
-            "left": 42.5,
+            "left": 50.3704,
             "top": 24.3056,
             "width": 5.5556,
             "height": 7.2222
@@ -1696,94 +1692,62 @@ window.SONGBOOK = [
           {
             "type": "chord",
             "name": "F",
-            "left": 51.9444,
-            "top": 24.3056,
+            "left": 33.0556,
+            "top": 35.9722,
             "width": 5.5556,
             "height": 7.2222
           },
           {
             "type": "chord",
             "name": "C",
-            "left": 61.3889,
-            "top": 24.3056,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "G",
-            "left": 70.8333,
-            "top": 24.3056,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "Am",
-            "left": 37.7778,
+            "left": 55.0926,
             "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 33.0556,
+            "top": 47.6389,
             "width": 5.5556,
             "height": 7.2222
           },
           {
             "type": "chord",
             "name": "Em",
-            "left": 47.2222,
-            "top": 35.9722,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "F",
-            "left": 56.6667,
-            "top": 35.9722,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "G",
-            "left": 66.1111,
-            "top": 35.9722,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "C",
-            "left": 28.3333,
+            "left": 48.7963,
             "top": 47.6389,
             "width": 5.5556,
             "height": 7.2222
           },
           {
             "type": "chord",
-            "name": "G",
-            "left": 56.6667,
-            "top": 47.6389,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "F",
-            "left": 33.0556,
-            "top": 59.3056,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "C",
+            "name": "Am",
             "left": 61.3889,
-            "top": 59.3056,
+            "top": 47.6389,
             "width": 5.5556,
             "height": 7.2222
           },
           {
             "type": "chord",
             "name": "F",
+            "left": 34.6296,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 59.8148,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
             "left": 28.3333,
             "top": 70.9722,
             "width": 5.5556,
@@ -1791,7 +1755,7 @@ window.SONGBOOK = [
           },
           {
             "type": "chord",
-            "name": "Em",
+            "name": "G",
             "left": 50.3704,
             "top": 70.9722,
             "width": 5.5556,
@@ -1799,31 +1763,39 @@ window.SONGBOOK = [
           },
           {
             "type": "chord",
-            "name": "Am",
-            "left": 66.1111,
-            "top": 70.9722,
-            "width": 5.5556,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
             "name": "F",
-            "left": 33.0556,
+            "left": 31.4815,
             "top": 82.6389,
             "width": 5.5556,
             "height": 7.2222
           },
           {
             "type": "chord",
-            "name": "G",
-            "left": 61.3889,
+            "name": "C",
+            "left": 53.5185,
             "top": 82.6389,
             "width": 5.5556,
             "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "下 / 下 / 下上",
+            "left": 9,
+            "top": 15.2083,
+            "width": 43,
+            "height": 2.3611
+          },
+          {
+            "type": "rhythm",
+            "name": "124 / 3 / 12 / 3",
+            "left": 9,
+            "top": 17.8472,
+            "width": 43,
+            "height": 2.3611
           }
         ],
-        "pageSet": "work-feng-zhoujielun-ukulele",
-        "pageScript": "assets/work-feng-zhoujielun-ukulele-complete.js"
+        "pageSet": "work-feng-zhoujielun-ukulele-v6",
+        "pageScript": "assets/work-feng-zhoujielun-ukulele-v6-complete.js"
       },
       {
         "instrument": "吉他",
@@ -1831,67 +1803,24 @@ window.SONGBOOK = [
         "capo": "无",
         "stars": 3,
         "ratingProvisional": true,
-        "image": "assets/work-feng-zhoujielun-guitar.svg",
-        "rhythms": [],
+        "image": "assets/work-feng-zhoujielun-guitar-v6.svg",
+        "rhythms": [
+          "下 / 下 / 下上",
+          "T / 3 / 12 / 3"
+        ],
         "lines": [
-          {
-            "text": "前奏：　　　　　　　　　　　　　",
-            "chords": [
-              {
-                "name": "C",
-                "at": 3
-              },
-              {
-                "name": "G",
-                "at": 6
-              },
-              {
-                "name": "F",
-                "at": 9
-              },
-              {
-                "name": "C",
-                "at": 12
-              },
-              {
-                "name": "G",
-                "at": 15
-              }
-            ],
-            "section": "前奏"
-          },
-          {
-            "text": "前奏：　　　　　　　　　　",
-            "chords": [
-              {
-                "name": "Am",
-                "at": 3
-              },
-              {
-                "name": "Em",
-                "at": 6
-              },
-              {
-                "name": "F",
-                "at": 9
-              },
-              {
-                "name": "G",
-                "at": 12
-              }
-            ],
-            "section": "前奏"
-          },
           {
             "text": "乌云在我们心里搁下一块阴影",
             "chords": [
               {
                 "name": "C",
-                "at": 0
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               },
               {
                 "name": "G",
-                "at": 9
+                "at": 7,
+                "alignment_status": "用户明确校正"
               }
             ],
             "section": "主歌"
@@ -1901,43 +1830,82 @@ window.SONGBOOK = [
             "chords": [
               {
                 "name": "F",
-                "at": 0
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               },
               {
                 "name": "C",
-                "at": 9
+                "at": 7,
+                "alignment_status": "用户明确校正"
               }
             ],
             "section": "主歌"
           },
           {
-            "text": "清晰透明　就像美丽的风景　",
+            "text": "清晰透明　就像美丽的风景",
             "chords": [
               {
                 "name": "F",
-                "at": 0
+                "at": 1,
+                "alignment_status": "用户明确校正"
               },
               {
                 "name": "Em",
-                "at": 7
+                "at": 6,
+                "alignment_status": "用户明确校正"
               },
               {
                 "name": "Am",
-                "at": 12
+                "at": 10,
+                "alignment_status": "用户明确校正"
               }
             ],
             "section": "主歌"
           },
           {
-            "text": "总在回忆里才看得清　",
+            "text": "总在回忆里才看得清",
             "chords": [
               {
                 "name": "F",
-                "at": 0
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               },
               {
                 "name": "G",
-                "at": 9
+                "at": 8,
+                "alignment_status": "用户明确校正"
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "被伤透的心能不能够继续爱我",
+            "chords": [
+              {
+                "name": "C",
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
+              },
+              {
+                "name": "G",
+                "at": 7,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "我用力牵起没温度的双手",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
+              },
+              {
+                "name": "C",
+                "at": 7,
+                "alignment_status": "按截图与示例规律调整，待试弹确认"
               }
             ],
             "section": "主歌"
@@ -2030,7 +1998,7 @@ window.SONGBOOK = [
           {
             "type": "chord",
             "name": "C",
-            "left": 32.6852,
+            "left": 27.963,
             "top": 24.3056,
             "width": 6.2963,
             "height": 7.2222
@@ -2038,7 +2006,7 @@ window.SONGBOOK = [
           {
             "type": "chord",
             "name": "G",
-            "left": 42.1296,
+            "left": 50.0,
             "top": 24.3056,
             "width": 6.2963,
             "height": 7.2222
@@ -2046,94 +2014,62 @@ window.SONGBOOK = [
           {
             "type": "chord",
             "name": "F",
-            "left": 51.5741,
-            "top": 24.3056,
+            "left": 32.6852,
+            "top": 35.9722,
             "width": 6.2963,
             "height": 7.2222
           },
           {
             "type": "chord",
             "name": "C",
-            "left": 61.0185,
-            "top": 24.3056,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "G",
-            "left": 70.463,
-            "top": 24.3056,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "Am",
-            "left": 37.4074,
+            "left": 54.7222,
             "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 32.6852,
+            "top": 47.6389,
             "width": 6.2963,
             "height": 7.2222
           },
           {
             "type": "chord",
             "name": "Em",
-            "left": 46.8519,
-            "top": 35.9722,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "F",
-            "left": 56.2963,
-            "top": 35.9722,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "G",
-            "left": 65.7407,
-            "top": 35.9722,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "C",
-            "left": 27.963,
+            "left": 48.4259,
             "top": 47.6389,
             "width": 6.2963,
             "height": 7.2222
           },
           {
             "type": "chord",
-            "name": "G",
-            "left": 56.2963,
-            "top": 47.6389,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "F",
-            "left": 32.6852,
-            "top": 59.3056,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
-            "name": "C",
+            "name": "Am",
             "left": 61.0185,
-            "top": 59.3056,
+            "top": 47.6389,
             "width": 6.2963,
             "height": 7.2222
           },
           {
             "type": "chord",
             "name": "F",
+            "left": 34.2593,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 59.4444,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
             "left": 27.963,
             "top": 70.9722,
             "width": 6.2963,
@@ -2141,7 +2077,7 @@ window.SONGBOOK = [
           },
           {
             "type": "chord",
-            "name": "Em",
+            "name": "G",
             "left": 50.0,
             "top": 70.9722,
             "width": 6.2963,
@@ -2149,31 +2085,39 @@ window.SONGBOOK = [
           },
           {
             "type": "chord",
-            "name": "Am",
-            "left": 65.7407,
-            "top": 70.9722,
-            "width": 6.2963,
-            "height": 7.2222
-          },
-          {
-            "type": "chord",
             "name": "F",
-            "left": 32.6852,
+            "left": 31.1111,
             "top": 82.6389,
             "width": 6.2963,
             "height": 7.2222
           },
           {
             "type": "chord",
-            "name": "G",
-            "left": 61.0185,
+            "name": "C",
+            "left": 53.1481,
             "top": 82.6389,
             "width": 6.2963,
             "height": 7.2222
+          },
+          {
+            "type": "rhythm",
+            "name": "下 / 下 / 下上",
+            "left": 9,
+            "top": 15.2083,
+            "width": 43,
+            "height": 2.3611
+          },
+          {
+            "type": "rhythm",
+            "name": "T / 3 / 12 / 3",
+            "left": 9,
+            "top": 17.8472,
+            "width": 43,
+            "height": 2.3611
           }
         ],
-        "pageSet": "work-feng-zhoujielun-guitar",
-        "pageScript": "assets/work-feng-zhoujielun-guitar-complete.js"
+        "pageSet": "work-feng-zhoujielun-guitar-v6",
+        "pageScript": "assets/work-feng-zhoujielun-guitar-v6-complete.js"
       }
     ]
   }
