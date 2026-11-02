@@ -1489,5 +1489,692 @@ window.SONGBOOK = [
         "pageScript": "assets/work-0003-ukulele-complete.js"
       }
     ]
+  },
+  {
+    "id": "work-feng-zhoujielun",
+    "title": "枫",
+    "artist": "周杰伦",
+    "variants": [
+      {
+        "instrument": "尤克里里",
+        "key": "C → D♭",
+        "capo": "无",
+        "stars": 3,
+        "ratingProvisional": true,
+        "image": "assets/work-feng-zhoujielun-ukulele.svg",
+        "rhythms": [],
+        "lines": [
+          {
+            "text": "前奏：　　　　　　　　　　　　　",
+            "chords": [
+              {
+                "name": "C",
+                "at": 3
+              },
+              {
+                "name": "G",
+                "at": 6
+              },
+              {
+                "name": "F",
+                "at": 9
+              },
+              {
+                "name": "C",
+                "at": 12
+              },
+              {
+                "name": "G",
+                "at": 15
+              }
+            ],
+            "section": "前奏"
+          },
+          {
+            "text": "前奏：　　　　　　　　　　",
+            "chords": [
+              {
+                "name": "Am",
+                "at": 3
+              },
+              {
+                "name": "Em",
+                "at": 6
+              },
+              {
+                "name": "F",
+                "at": 9
+              },
+              {
+                "name": "G",
+                "at": 12
+              }
+            ],
+            "section": "前奏"
+          },
+          {
+            "text": "乌云在我们心里搁下一块阴影",
+            "chords": [
+              {
+                "name": "C",
+                "at": 0
+              },
+              {
+                "name": "G",
+                "at": 9
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "我聆听沉寂已久的心情",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0
+              },
+              {
+                "name": "C",
+                "at": 9
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "清晰透明　就像美丽的风景　",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0
+              },
+              {
+                "name": "Em",
+                "at": 7
+              },
+              {
+                "name": "Am",
+                "at": 12
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "总在回忆里才看得清　",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0
+              },
+              {
+                "name": "G",
+                "at": 9
+              }
+            ],
+            "section": "主歌"
+          }
+        ],
+        "chords": {
+          "Ab": [
+            1,
+            3,
+            4,
+            3
+          ],
+          "Am": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "Bbm": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "C": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "Db": [
+            1,
+            1,
+            1,
+            4
+          ],
+          "Em": [
+            0,
+            4,
+            3,
+            2
+          ],
+          "F": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "Fm": [
+            1,
+            0,
+            1,
+            3
+          ],
+          "G": [
+            0,
+            2,
+            3,
+            2
+          ],
+          "Gb": [
+            3,
+            1,
+            2,
+            1
+          ]
+        },
+        "pages": 6,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 33.0556,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 42.5,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 51.9444,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 61.3889,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 70.8333,
+            "top": 24.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 37.7778,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 47.2222,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 56.6667,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 66.1111,
+            "top": 35.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 28.3333,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 56.6667,
+            "top": 47.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 33.0556,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 61.3889,
+            "top": 59.3056,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 28.3333,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 50.3704,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 66.1111,
+            "top": 70.9722,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 33.0556,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 61.3889,
+            "top": 82.6389,
+            "width": 5.5556,
+            "height": 7.2222
+          }
+        ],
+        "pageSet": "work-feng-zhoujielun-ukulele",
+        "pageScript": "assets/work-feng-zhoujielun-ukulele-complete.js"
+      },
+      {
+        "instrument": "吉他",
+        "key": "C → D♭",
+        "capo": "无",
+        "stars": 3,
+        "ratingProvisional": true,
+        "image": "assets/work-feng-zhoujielun-guitar.svg",
+        "rhythms": [],
+        "lines": [
+          {
+            "text": "前奏：　　　　　　　　　　　　　",
+            "chords": [
+              {
+                "name": "C",
+                "at": 3
+              },
+              {
+                "name": "G",
+                "at": 6
+              },
+              {
+                "name": "F",
+                "at": 9
+              },
+              {
+                "name": "C",
+                "at": 12
+              },
+              {
+                "name": "G",
+                "at": 15
+              }
+            ],
+            "section": "前奏"
+          },
+          {
+            "text": "前奏：　　　　　　　　　　",
+            "chords": [
+              {
+                "name": "Am",
+                "at": 3
+              },
+              {
+                "name": "Em",
+                "at": 6
+              },
+              {
+                "name": "F",
+                "at": 9
+              },
+              {
+                "name": "G",
+                "at": 12
+              }
+            ],
+            "section": "前奏"
+          },
+          {
+            "text": "乌云在我们心里搁下一块阴影",
+            "chords": [
+              {
+                "name": "C",
+                "at": 0
+              },
+              {
+                "name": "G",
+                "at": 9
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "我聆听沉寂已久的心情",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0
+              },
+              {
+                "name": "C",
+                "at": 9
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "清晰透明　就像美丽的风景　",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0
+              },
+              {
+                "name": "Em",
+                "at": 7
+              },
+              {
+                "name": "Am",
+                "at": 12
+              }
+            ],
+            "section": "主歌"
+          },
+          {
+            "text": "总在回忆里才看得清　",
+            "chords": [
+              {
+                "name": "F",
+                "at": 0
+              },
+              {
+                "name": "G",
+                "at": 9
+              }
+            ],
+            "section": "主歌"
+          }
+        ],
+        "chords": {
+          "Ab": [
+            4,
+            6,
+            6,
+            5,
+            4,
+            4
+          ],
+          "Am": [
+            -1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "Bbm": [
+            -1,
+            1,
+            3,
+            3,
+            2,
+            1
+          ],
+          "C": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "Db": [
+            -1,
+            4,
+            6,
+            6,
+            6,
+            4
+          ],
+          "Em": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "F": [
+            1,
+            3,
+            3,
+            2,
+            1,
+            1
+          ],
+          "Fm": [
+            1,
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "G": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "Gb": [
+            2,
+            4,
+            4,
+            3,
+            2,
+            2
+          ]
+        },
+        "pages": 6,
+        "hotspots": [
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 32.6852,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 42.1296,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 51.5741,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 61.0185,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 70.463,
+            "top": 24.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 37.4074,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 46.8519,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 56.2963,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 65.7407,
+            "top": 35.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 27.963,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 56.2963,
+            "top": 47.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 32.6852,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "C",
+            "left": 61.0185,
+            "top": 59.3056,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 27.963,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Em",
+            "left": 50.0,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "Am",
+            "left": 65.7407,
+            "top": 70.9722,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "F",
+            "left": 32.6852,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          },
+          {
+            "type": "chord",
+            "name": "G",
+            "left": 61.0185,
+            "top": 82.6389,
+            "width": 6.2963,
+            "height": 7.2222
+          }
+        ],
+        "pageSet": "work-feng-zhoujielun-guitar",
+        "pageScript": "assets/work-feng-zhoujielun-guitar-complete.js"
+      }
+    ]
   }
 ];
